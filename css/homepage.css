@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "K2D", sans-serif;
+}
+
+.container {
+  width: 500px;
+  min-height: 59vw;
+  background-color: #5c7b8f;
+  border: 1spx solid black;
+}
+
+img {
+  border-radius: 50%;
+}
