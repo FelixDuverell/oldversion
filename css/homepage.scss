@@ -15,6 +15,25 @@ body {
     margin: 10%;
 }
 
+.navbar {
+    margin-top: 25px;
+}
+
+.about-me {
+    margin: 11%;
+}
+
+.navbar-list {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(0.9);
+
+    &:hover {
+        color: #777a7c;
+    }
+}
+
 h1 {
     font-style: normal;
     font-size: 30px;
