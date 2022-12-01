@@ -1,10 +1,11 @@
 body {
     height: 100vh;
     width: 100%;
-    // background: linear-gradient(to top left, #0c71a3, #000000);
-    // background-size: cover;
+    background: linear-gradient(to top left, #0c71a3, #000000);
+    background-size: cover;
     overflow-x: hidden; 
     font-family: 'K2D', sans-serif;
+    
 }
 
 .main {
@@ -325,27 +326,29 @@ margin-bottom: 30px;
     padding: 20px 100px;
 }
 
-.contact    :after {
+.contact:after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     // background: url("/images/happyfelix.png") no-repeat center;
-    background-size: cover;
-    z-index: -1;
-    filter:blur(50px);
+    // background-size: cover;
+    // z-index: -1;
+    // filter:blur(50px);
 }
 
 .contact-box {
     max-width: 850px;
+    height: 600px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
 }
 
 .left {
@@ -373,7 +376,7 @@ margin-bottom: 30px;
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #2ecc71;
+    background-color: #2eafcc;
 }
 
 .field {
@@ -381,17 +384,76 @@ margin-bottom: 30px;
     padding: 0.5rem 1rem;
     outline: none;
     border: 2px solid rgba(0, 0, 0, 0);
-    background-color: rgba(230, 230, 230, 0,6);
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
+    background-color: rgba(0, 0, 0, 0.1);
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-    }
+        background-color: rgba(122, 122, 122, 0.1);
+    } 
 
     &:focus {
         background-color: #fff;
         border: 2px solid rgba(30, 85, 250, 0.47);
+    }
+}
+
+.area {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2eafcc;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+
+    &:hover {
+        background-color: #6ae4ff;
+    }
+}
+
+/*_________________________BUTTON ICON ANIMATIONS (simple)______________________*/
+ 
+.fa {
+    font-size: 1.2rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    background-color: rgb(251, 242, 245);
+    border-radius: 2.3rem;
+    border: 1px solid #4078c0;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 200ms ease-in-out;
+  }
+   
+  .fa:hover {
+    color: #4078c0;
+    border: 0.2rem solid#5585b5;
+    opacity: 1;
+  }
+   
+  .fa-linkedin {
+    color: #00a0dc;
+  }
+  .fa-github {
+    color: #4078c0;
+  }
+  .fa-codepen {
+    color: black;
+  }
+
+@media screen and (max-width:880px) {
+    .contact-box {
+        grid-template-columns: 1;
+    }
+
+    .left {
+        height: 200px;
     }
 }
