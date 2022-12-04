@@ -23,10 +23,19 @@ body {
 .scroll {
     color: #FFFFFF;
     cursor: pointer;
+    margin-top: 30px;
 
     &:hover {
         color: #64aff9;
     }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.scroll-down {
+    list-style-type: none;
 }
 
 .bigtext {
