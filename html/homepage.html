@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/05341947df.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/icon" href="/images-bhromaon/rock.png" alt="rockhand-favicon">
+    <link rel="icon" type="image/icon" href="/images-bhromaon/rock.png" alt="rockhand-favicon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/icon" href="/images-bhromaon/rock.png" alt="rockhand-favicon" media="(prefers-color-scheme: light)">
+
     <link rel="stylesheet" href="/css/homepage.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <title>FelixDuverell</title>
@@ -15,14 +17,13 @@
     <div class="navbar">
         <nav>
             <h2 class="first-name"><a href="/html/homepage.html" class="first-name">Felix <span class="last-name">Duverell</span></a></h2>
-
-            <ul>
-                <li class="navbar-list">about<a href="#" class="navbar-list"></a></li>
-                <li class="navbar-list">about<a href="#" class="navbar-list"></a></li>
-                <li class="navbar-list">about<a href="#" class="navbar-list"></a></li>
-                <li class="navbar-list">about<a href="#" class="navbar-list"></a></li>
-                <li class="navbar-list">about<a href="#" class="navbar-list"></a></li>
-            </ul>
+            <ul class="about-list">
+                <li><a href="#myexperience" class="about-menu">My Experience <i class="fa-solid fa-square-poll-vertical"></i></a></li>
+                <li><a href="#aboutme" class="about-menu">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#mywork" class="about-menu">My Work <i class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="#contactme" class="about-menu">Contact Me <i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#">Reach <i class="fa-solid fa-sort-down"></i></a></li>
+            </ul> 
         </nav>
     </div>
 
@@ -35,12 +36,9 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magni fuga vitae aliquam nemo</p>
 
         <hr class="line">
-
-        <div class="arrow-down">
-            <li><a href="#" class="arrow-down"><i class="fa-solid fa-arrow-down"></i></a></li>
-        </div>          
+        
     </div>
-    <div class="about-menu"> 
+    <!-- <div class="about-menu"> 
         <nav>
             <ul class="about-list">
                 <li><a href="#" class="about-menu">My Experience <i class="fa-solid fa-square-poll-vertical"></i></a></li>
@@ -49,24 +47,51 @@
                 <li><a href="#" class="about-menu">Contact Me <i class="fa-solid fa-envelope"></i></a></li>
             </ul> 
         </nav>      
-    </div>
-    
-    <div class="my-exp">
-        <h2>My Experience</h2>
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+    </div> -->
+
+    <section class="my-exp">
+        <h2 id="myexperience">My Experience</h2>
+        <!-- <hr class="line"> -->
+        <div class="list-item1">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
         </div>
-    </div>
+
+        <div class="list-item2">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+                      
+        <div class="list-item3">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+
+        <div class="list-item4">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+
+        <div class="list-item5">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+
+        <div class="list-item6">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+
+        <div class="list-item7">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+
+        <div class="list-item8">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+
+        <div class="list-item9">
+            <li class="exp-list">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        </div>
+    </section>
 
     <div class="about-me">
-        <h2>About me</h2>
+        <h2 id="aboutme">About me</h2>
+        <hr class="line">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
             Doloremque exercitationem fugiat aspernatur itaque earum aliquid. Quod itaque doloremque quo, provident repellendus fuga at ad animi dolorem consectetur doloribus adipisci possimus unde soluta laborum reprehenderit? 
             Ducimus non dicta ipsa voluptas molestias voluptatem expedita eos, repudiandae eligendi quod aperiam saepe molestiae ipsum et exercitationem eaque veritatis blanditiis aliquam deleniti est tempore ullam rem dolores. 
@@ -74,8 +99,15 @@
         </p>
     </div>
 
+
+    <h2>My Work</h2>
+    <p>Have a look around on some of my work</p>
+    <hr class="line">
+
+
+
     <!--________________________FLIPPING CARDS________________________-->
-    <section class="cards cf">
+    <section class="cards cf" id="mywork">
         <article class="fancy-card one">
             <div class="bg-overlay"></div>
             <div class="content">
@@ -121,11 +153,11 @@
         </article>
     </section>
 
-    <div class="contact">
+    <section class="contact">
         <div class="contact-box">
             <div class="left"></div>
             <div class="right">
-                <h2 class="contact-header">Contact Me</h2>
+                <h2 class="contact-header" id="contactme">Contact Me</h2>
                 <input type="text" class="field" placeholder="Your Name">
                 <input type="text" class="field" placeholder="Your Email">
                 <textarea class="field" placeholder="Message"></textarea>
@@ -137,6 +169,7 @@
                     <a href="https://www.linkedin.com/in/felix-duverell-98ab1a254/" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/FelixDuverell"><i class="fa fa-brands fa-github"></i></a>
                     <a href="#"><i class="fa fa-brands fa-codepen"></i></a>
+                    <a class="fa" id="email" href="mailto:felix.duverell@gmail.com">📩</i></a>
                 </div>
             </div>
         </div>

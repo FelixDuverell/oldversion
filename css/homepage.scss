@@ -1,11 +1,10 @@
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: linear-gradient(to top left, #0c71a3, #000000);
     background-size: cover;
     overflow-x: hidden; 
     font-family: 'K2D', sans-serif;
-    
 }
 
 .main {
@@ -18,10 +17,6 @@ body {
 
 .navbar {
     margin-top: 25px;
-}
-
-.my-exp {
-    margin: 11%;
 }
 
 .about-me {
@@ -52,6 +47,10 @@ h1 {
     color: #fff;
 }
 
+h2 {
+    color: #fff;
+}
+
 p {
     font-size: 20px;
     width: 50%;
@@ -73,32 +72,64 @@ p {
     text-decoration: none;
 }
 
-// .about-menu {
-//     // margin: 10%;
-//     // list-style-type: none;
-// }
-
-.about-list {
-    display: block;
+.exp-list {
+    color: #fff;
 }
 
-// .about-menu {
+.my-exp {
+    margin: 11%;
+    width: 80%;
+    min-height: 250px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    // border: 2px solid black;
+}
 
-// }
+.list-item1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
 
-.arrow-down {
-    float: right;
-    font-size: 50px;
-    list-style: none;
-    color: #fff;
+.list-item2 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
 
-    &:active {
-        scale: 0.9;
-    }
+.list-item3 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
 
-    &:hover {
-        color: #777a7c;
-    }
+.list-item4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.list-item5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.list-item6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.list-item7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.list-item8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.list-item9 {
+    grid-column: 3/4;
+    grid-row: 4/5;
 }
 
 nav {
@@ -331,12 +362,12 @@ margin-bottom: 30px;
     position: absolute;
     left: 0;
     right: 0;
-    // width: 100%;
-    // height: 100%;
-    // background: url("/images/happyfelix.png") no-repeat center;
-    // background-size: cover;
-    // z-index: -1;
-    // filter:blur(50px);
+    width: 100%;
+    height: 100%;
+    background: url("/images/happyfelix.png") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter:blur(50px);
 }
 
 .contact-box {
@@ -365,6 +396,7 @@ margin-bottom: 30px;
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    color: #000;
 }
 
 .contact-header:after {

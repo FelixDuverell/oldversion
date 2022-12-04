@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, right bottom, left top, from(#0c71a3), to(#000000));
   background: linear-gradient(to top left, #0c71a3, #000000);
@@ -18,10 +18,6 @@ body {
 
 .navbar {
   margin-top: 25px;
-}
-
-.my-exp {
-  margin: 11%;
 }
 
 .about-me {
@@ -51,6 +47,10 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  color: #fff;
+}
+
 p {
   font-size: 20px;
   width: 50%;
@@ -72,21 +72,182 @@ p {
   text-decoration: none;
 }
 
-.about-list {
-  display: block;
-}
-
-.arrow-down {
-  float: right;
-  font-size: 50px;
-  list-style: none;
+.exp-list {
   color: #fff;
 }
-.arrow-down:active {
-  scale: 0.9;
+
+.my-exp {
+  margin: 11%;
+  width: 80%;
+  min-height: 250px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
-.arrow-down:hover {
-  color: #777a7c;
+
+.my-exp > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.my-exp > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.my-exp > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.my-exp > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.my-exp > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.my-exp > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.my-exp > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.my-exp > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.my-exp > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.my-exp > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.my-exp > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.my-exp > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+
+.my-exp > *:nth-child(13) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.my-exp > *:nth-child(14) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.my-exp > *:nth-child(15) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+
+.my-exp > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+}
+
+.list-item1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.list-item2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.list-item3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.list-item4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.list-item5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.list-item6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.list-item7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.list-item8 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.list-item9 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
 }
 
 nav {
@@ -379,6 +540,13 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/happyfelix.png") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
 }
 
 .contact-box {
@@ -386,6 +554,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 600px;
   display: -ms-grid;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -412,6 +581,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .contact-header:after {
@@ -502,7 +672,6 @@ h1, h2, h3, h4, h5, h6 {
     -ms-grid-columns: 1;
     grid-template-columns: 1;
   }
-
   .left {
     height: 200px;
   }
