@@ -415,7 +415,7 @@ margin-bottom: 30px;
     max-width: 850px;
     height: 600px;
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -556,5 +556,15 @@ margin-bottom: 30px;
 
     .left {
         height: 200px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .contact-box {
+        grid-template-columns: 1;
+    }
+
+    .left {
+        height: 100px;
     }
 }

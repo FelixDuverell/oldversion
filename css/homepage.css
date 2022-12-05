@@ -592,6 +592,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 600px;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)(2);
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -743,8 +745,16 @@ h1, h2, h3, h4, h5, h6 {
     -ms-grid-columns: 1;
     grid-template-columns: 1;
   }
-
   .left {
     height: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact-box {
+    -ms-grid-columns: 1;
+    grid-template-columns: 1;
+  }
+  .left {
+    height: 100px;
   }
 }

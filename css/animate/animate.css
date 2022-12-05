@@ -1,0 +1,304 @@
+/* Body & Cards */
+body {
+  font-family: "poppins";
+  background-color: #fcd5d5;
+}
+
+header {
+  height: 100px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #000;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+li a {
+  margin: 0;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+ul li a:hover, ul li a:focus {
+  color: red;
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+  min-height: 500px;
+  background-color: #fcd5d5;
+  /* border: 2px solid #000; */
+}
+
+.logosvg {
+  height: 130px;
+}
+
+.card1 {
+  width: 200px;
+  height: 430px;
+  margin: 20px;
+  background-color: #868054;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2px 16px;
+  border-radius: 5px;
+}
+
+.card1:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card2 {
+  width: 200px;
+  height: 430px;
+  margin: 20px;
+  background-color: #ff2c2c;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2px 16px;
+  border-radius: 5px;
+}
+
+.card2:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card3 {
+  width: 200px;
+  height: 430px;
+  margin: 20px;
+  background-color: #7db1ff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2px 16px;
+  border-radius: 5px;
+}
+
+.card3:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card4 {
+  width: 200px;
+  height: 430px;
+  margin: 20px;
+  background-color: #28752f;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2px 16px;
+  border-radius: 5px;
+}
+
+.card4:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* animation: imgZoom 3.5s ease infinite; */
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+}
+
+img:hover {
+  -webkit-animation: imgZoom 3.5s ease infinite;
+          animation: imgZoom 3.5s ease infinite;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  bottom: 20px;
+  width: 80%;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+.btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.btn:hover {
+  background-color: #02f9a7;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+/* Image rotation */
+@-webkit-keyframes imgZoom {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes imgZoom {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+}
+.card-flip {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: none;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.card-flip2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card-flip:hover .card-flip2 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-flip3, .card-flip4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-flip3 {
+  background-color: transparent;
+  color: black;
+}
+
+.card-flip4 {
+  background-color: #dca037;
+  color: rgb(0, 0, 0);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.container-mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+  min-height: 200px;
+  background-color: #fcd5d5;
+  /* border: 2px solid #000; */
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.last-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+}
+
+.h2-footer {
+  display: inline-block;
+}
